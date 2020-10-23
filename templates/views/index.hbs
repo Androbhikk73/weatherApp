@@ -1,0 +1,23 @@
+{{>headers}}
+
+<div class="box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+
+    <div id="weathercon">
+        {{{icon}}}
+    </div>
+
+    <div class="info">
+        <h2 class="location">
+            <i class="fas fa-street-view" style="color: #fff"></i>{{ location }}, {{ country }}</h2>
+        <p id="date">{{week}} | {{ month }} {{ date }} | {{hours}}:{{mins}}</p>
+        <h1 class="temp">{{tempval}}&deg;C</h1>
+        <h3 class="tempmin_max">
+            Min {{tempmin}}&deg;C | Max {{tempmax}}&deg;C
+        </h3>
+    </div>
+</div>
+
+{{>footers}}
